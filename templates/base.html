@@ -4,10 +4,54 @@
     <meta charset="utf-8">
     <title>COVID19_Status</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
   </head>
   <body>
+    <div class="container">
+        <nav class="navbar mb-5 shadow">
+            <ul>
+                <li class="navbar-brand "><a href="" class="text-success text-decoration-none">Home</a></li>
+                <li class="navbar-brand "><a href="" class="text-success text-decoration-none">About ME</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+        <div class="col-lg-9">
     {% block content %}
     {% endblock %}
+    </div>
+    <div class="col-lg-3 bg-success text-white text-center">
+         <strong class="lead text-white text-monospace font-weight-bold">WHO Guidelines</strong>
+    <ul class="text-justify p-3 text-monospace">
+        <li class="pt-2">Avoid touching your face , especially your eyes, nose and mouth.</li>
+        <li class="pt-2">Wash your hand frequently with soap and water or use alcohol-based rub.</li>
+        <li class="pt-2">Seek immediate medical advice if you have fever, cough or are experiencing breathing difficulties</li>
+        <li class="pt-2">Maintain distance of at least 1 metre from someone who is coughing or sneezing
+</li>   <li class="pt-2">When coughing or sneezing, cover your mouth and nose with flexed elbow or tissue
+</li>   <li class="pt-2">When coughing or sneezing, discard the used tissue immediately into a closed bin.
+</li> <li class="pt-2">If you have cough, fever, and difficulty in breathing, wear a mask correctly and seek medical advice
+</li>   <li class="pt-2">        Take care if you are elderly
+</li>
+        <li class="pt-2">Avoid Exposure: Stay at home. Wash hands or use alchohol-based rub. Avoid touching your face.
+</li>
+        <li class="pt-2">Stay Healthy: Eat nutritious food, exercise regularly. Stay connected with friends and family.
+</li>
+        <li class="pt-2">Be prepared: Keep a supply of essential medicines. Keep all helpline numbers handy.
+        <li class="pt-2">Stay home stay safe. Stay positive. Avoid alarmist news. Be connected to friends and family. Have a hobby.
+
+</li>
+       </ul>
+    </div>
+    </div>
+    </div>
   </body>
+  <footer class="footer p-3 mb-2 container-fluid   bg-dark ">
+      <div class="nav justify-content-center ">
+          <ul>
+                <li class="navbar-brand  "><a href="" class=" text-info text-decoration-none"> &copy; 4kash</a></li>
+                <li class="navbar-brand  "><a href="" class=" text-info text-decoration-none">Github</a></li>
+                <li class="navbar-brand  "><a href="" class="text-info text-decoration-none">LinkedIn</a></li>
+                <li class="navbar-brand  "><a href="" class="text-info text-decoration-none">Instagram</a></li>
+                <li class="navbar-brand  "><a href="" class="text-info text-decoration-none">Medium</a></li>
+            </ul>
+      </div>
+  </footer>
 </html>

@@ -1,19 +1,37 @@
 {% extends 'base.html' %}
-    {% block content %}
-        <div class="container">
-          <strong style="font-size:24px;font-style:sans-serif;">COVID_19 status Live</strong>
+<div class="container ">
+
+  {% block content %}
+
+              <div class="row">
+                <p class=" col-lg-4 text-center lead">Total Cases: <b class="font-weight-bolder text-info lead">{{totalCases}}</b></p>
+                <p class="col-lg-4 lead  text-center">Total Recovered: <b class="font-weight-bolder text-success lead">{{totalRecovered}}</b></p>
+                <p class="col-lg-4  lead text-center">Total Deaths: <b class="font-weight-bolder text-danger lead">{{totalDeaths}}</b></p>
+              </div>
+              <table class="table table-bordered text-center ">
+                <thead>
+                  <tr>
+                    <th scope="col"class="text-info">Location</th>
+                    <th scope="col" class="text-info">Confirmed Cases</th>
+                    <th scope="col"class="text-success">Recovered</th>
+                    <th scope="col" class="text-danger">Deaths</th>
+                    <th scope="col" class="text-info">Emergency Number</th>
+                  </tr>
+                </thead>
               {% for z in xlist %}
-                <ul style="padding-top:40px">
-                  <div  style="background-color:#2B2B52;color:white;width:25rem;padding:30px">
-                      <strong class="card-title">Location : {{z.loc}}</strong>
-                      <ul style="padding:30px;">
-                        <p class="card-subtitle mb-2 text-muted" style="color:grey">Confirmed Cases India : {{z.cci}}</p>
-                        <p class="card-subtitle mb-2 text-muted" style="color:grey">Confirmed Cases Foriegn : {{z.ccf}}</p>
-                        <p class="card-subtitle mb-2 text-muted" style="color:grey">Discharged : {{z.dis}}</p>
-                        <p class="card-subtitle mb-2 text-muted" style="color:grey">Deaths : {{z.deaths}}</p>
-                      </ul>
-                  </div>
-                </ul>
+                  <tbody>
+                    <tr>
+
+                      <td>{{z.loc}}</td>
+                      <td>{{z.ccf}}</td>
+                      <td>{{z.dis}}</td>
+                      <td>{{z.deaths}}</td>
+                      <td>{{z.number}}</td>
+                    </tr>
+                  </tbody>
               {% endfor %}
-       </div>
+              </table>
     {% endblock %}
+
+
+</div>
